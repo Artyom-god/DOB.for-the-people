@@ -9,7 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var islightOn = true
+    @IBAction func buttenPress(_ sender: Any) {
+        islightOn = !islightOn
+        view.backgroundColor = islightOn ? .white : .darkGray
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
